@@ -1,3 +1,30 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// #Homepage{
+//     text-align: right;
+// }
+
+.container {
+    border: 1px solid black;
+    display: inline;
+    height: 500px;
+    width: 500px;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+}
+
+.item-a {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.primary-button-container {
+    width: 50%
+}
+
+.primary-button-container__primary-button {
+    background-color: red;
+    border: 1px solid blue;
+}
