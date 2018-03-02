@@ -1,31 +1,3 @@
-<!DOCTYPE html>
-<head>
-    <link rel='stylesheet' href='home.scss'/>
-</head>
-<body>
-
-    <div class="container">
-        <div class="item-a">
-            <img src="http://www.eurovoix.com/wp-content/uploads/2016/05/logo_logo.png" height="50" />
-            <a href="">Assignments</a>
-            <p>Log Out</p>
-        </div>
-        <div class="primary-button-container">
-            <h1>Assignments</h1>
-            <a href="/newassignment.html.erb">
-            <button class="primary-button-container__primary-button">Add New Assignment</button>
-            </a>
-        </div>
-    </div>
-
-    <div class="container-test">
-            <p>Add name of your assignment</p>
-            <input type="text"></input>
-            <button class="secondary-button">Add</button>
-            
-
-           
-        </div>
-
-</body>
-</html>
+<h1 class="title">To Do List</h1>
+<%= button_to "Add List", new_list_path, method: :get, form_class: "primary-button" %>
+    
