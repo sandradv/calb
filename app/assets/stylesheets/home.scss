@@ -9,12 +9,39 @@
 .container {
     border: 1px solid black;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
+}
+
+.container-test {
+    background-color: gray;
+    height: 200px;
+    margin-left: 40%;
+    padding: 10px;
+    width: 20%;
+}
+
+h3 {
+    margin-left: 10%;
+    padding-top: 40px;
+}
+
+h4 {
+    margin-left: 12%
+}
+
+input {
+    margin-left: 40%;
+    padding: 5px;
+    width: 15%;
 }
 
 .logo {
     border: 1px solid black;
     float: left;
+}
+
+p {
+    text-align: center;
 }
 
 .nav {
@@ -26,22 +53,16 @@
     display: inline-block;
 }
 
+.secondary-button {   
+    margin-left: 40%;
+}
+
 .title {
     border: 1px solid black;
     margin-top: 50px;
     text-align: center;
 }
 
-.primary-button {
-    display: block;
-    margin: 0 auto;
-}
-.container-test {
-    background-color: gray;
-    height: 200px;
-    width: 200px;
-}
-.secondary-button {
-display: block;     
-    margin: 10px;
+ul {
+    margin-left: 10%
 }
