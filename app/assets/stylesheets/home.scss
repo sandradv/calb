@@ -20,6 +20,24 @@
     width: 20%;
 }
 
+.cover__buttons{
+    text-align: center;
+}
+
+.cover__container{
+    border: 3px solid green;
+    height: 60vh;
+    margin: 20vh 20vw;
+    padding: 70px 0;
+    text-align: center;
+    width: 60vw;
+}
+
+.cover__logo {
+    height: 180px;
+    width: 300px;
+}
+
 h3 {
     margin-left: 10%;
     padding-top: 40px;
@@ -40,6 +58,12 @@ input {
     float: left;
 }
 
+.login__button {
+    height: 40px;
+    margin-top: 10px;
+    width: 150px;
+}
+
 p {
     text-align: center;
 }
@@ -55,6 +79,11 @@ p {
 
 .secondary-button {   
     margin-left: 40%;
+}
+
+.sign__up__button {
+    height: 40px;
+    width: 150px;
 }
 
 .title {
