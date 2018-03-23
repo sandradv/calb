@@ -1,10 +1,12 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.add__new__list {
+    border-radius: 5px; 
+}
 
-// #Homepage{
-//     text-align: right;
-// }
+body {
+    background-color: #1490BA;
+    height: 100%;
+    margin: 0;
+}
 
 .container {
     border: 1px solid black;
@@ -24,13 +26,12 @@
     text-align: center;
 }
 
-.cover__container{
-    border: 3px solid green;
-    height: 60vh;
-    margin: 20vh 20vw;
-    padding: 70px 0;
+.cover__container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
     text-align: center;
-    width: 60vw;
 }
 
 .cover__logo {
@@ -47,10 +48,28 @@ h4 {
     margin-left: 12%
 }
 
+html {
+    height: 100%;
+}
+
 input {
-    margin-left: 40%;
+    display: block;
+    width: 300px;
+    height: 30px;
+}
+
+input[type="password"] {
+    border: 5px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px; 
     padding: 5px;
-    width: 15%;
+}
+
+input[type="username"] {
+    border: 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; 
+    padding: 5px;
 }
 
 .logo {
@@ -58,10 +77,24 @@ input {
     float: left;
 }
 
+.logo__cover__container {
+    align-items: center;
+    justify-content: center;
+
+}
+
 .login__button {
+    border-radius: 5px;
+    color: #4FB0C6;
+    font-family: 'Mina', sans-serif;
+    font-size: 20px;
     height: 40px;
     margin-top: 10px;
     width: 150px;
+}
+
+.login__title {
+    color: #444;
 }
 
 p {
@@ -81,7 +114,15 @@ p {
     margin-left: 40%;
 }
 
+.secondary__login__button {
+    width: 300px;
+}
+
 .sign__up__button {
+    border-radius: 5px;
+    color: #4FB0C6;
+    font-family: 'Mina', sans-serif;
+    font-size: 20px;
     height: 40px;
     width: 150px;
 }
