@@ -1,3 +1,5 @@
+$primary-blue: #4FB0C6;
+
 .add__new__list {
     border-radius: 5px; 
 }
@@ -14,30 +16,26 @@ body {
     max-width: 1000px;
 }
 
-.container-test {
-    background-color: gray;
-    height: 200px;
-    margin-left: 40%;
-    padding: 10px;
-    width: 20%;
-}
-
-.cover__buttons{
+.cover__buttons {
+    border-radius: 5px;
+    margin: 20px;
     text-align: center;
 }
 
 .cover__container {
-    display: flex;
     align-items: center;
-    height: 100%;
+    display: flex;
     justify-content: center;
+    height: 100%;
     text-align: center;
 }
 
 .cover__logo {
     height: 180px;
-    width: 300px;
+    width: 350px;
 }
+
+
 
 h3 {
     margin-left: 10%;
@@ -53,23 +51,16 @@ html {
 }
 
 input {
+    border: 0px;
+    border-bottom: 1px solid #B0BEC5;
+    border-bottom-right-radius: 2px; 
     display: block;
-    width: 300px;
+    font-family: 'Mina', sans-serif;
+    font-size: 15px;
     height: 30px;
-}
-
-input[type="password"] {
-    border: 5px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px; 
+    outline: none;
     padding: 5px;
-}
-
-input[type="username"] {
-    border: 5px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px; 
-    padding: 5px;
+    width: 300px;
 }
 
 .logo {
@@ -80,21 +71,22 @@ input[type="username"] {
 .logo__cover__container {
     align-items: center;
     justify-content: center;
-
 }
 
-.login__button {
-    border-radius: 5px;
-    color: #4FB0C6;
-    font-family: 'Mina', sans-serif;
-    font-size: 20px;
-    height: 40px;
-    margin-top: 10px;
-    width: 150px;
+.login__signin__background {
+    background-color: white;
+    border-radius: 2px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
 }
+
 
 .login__title {
-    color: #444;
+    color:  #4FB0C6;
+    font-family: 'Mina', sans-serif;
+    font-size: 20px;
+    padding: 10px;
 }
 
 p {
@@ -114,17 +106,38 @@ p {
     margin-left: 40%;
 }
 
-.secondary__login__button {
-    width: 300px;
-}
-
-.sign__up__button {
-    border-radius: 5px;
-    color: #4FB0C6;
+@mixin button {
+    background-color: $primary-blue;
+    border: 0px;
+    border-radius: 3px;
+    color: white;
     font-family: 'Mina', sans-serif;
     font-size: 20px;
     height: 40px;
-    width: 150px;
+}
+.cover__log__sign__buttons {
+    @include button;
+    margin-top: 10px;
+    width: 175px;
+}
+.bottom__log_sign__buttons {
+    @include button;
+    margin-top: 10px;
+    width: 310px;
+}
+
+.top__log_sign__buttons {
+    @include button;
+    width: 130px;
+}
+
+.button__inactive {
+    background-color: lightblue;
+    color: $primary-blue;
+}
+
+.ul__tab {
+
 }
 
 .title {

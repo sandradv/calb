@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   get 'lists', to: 'lists#index'
   get 'lists/new', to: 'lists#new', as: 'new_list'
   get 'lists/:list_id', to: 'lists#show'
-  get 'sessions/new', to: 'sessions#new'
-  get 'sessions/index', to: 'sessions#index'
+  get 'sessions/new', to: 'sessions#new', as: 'signup'
+  get 'sessions/index', to: 'sessions#index', as: 'login'
 
 
 end
