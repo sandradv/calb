@@ -64,47 +64,19 @@ input {
     display: block;
     font-family: 'Mina', sans-serif;
     font-size: 15px;
-    height: 30px;
     outline: none;
     padding: 5px;
     width: 300px;
-
-    // &:focus {
-    //     border-bottom: 2px solid $buttons-blue;
-    //     transition: all 0.5s ease;
-    // }
-}
-
-input {
     position: relative;
-    color: #000;
-    text-decoration: none;
+    outline: none;
+    transition: all 0.5s;
+    margin: 5% 5% ;  
+    height: 5px;  
 }
-  
+
 input:focus {
-color: #000;
-}
-
-input:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-input:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
+    border-bottom: 1px solid $buttons-blue ;
+   }
 
 .logo {
     border: 0;
