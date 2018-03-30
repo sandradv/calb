@@ -1,8 +1,14 @@
-<% @lists.each do |list| %>
-    <div>
-        <a href="<%="/lists/#{list.id}"%>"
-            <h3><%= list.name %></h3> 
-        </a>
+<div class="container">
+    <div class="lists_container">
+        <h1>To Do!</h1>  
+        <div class="buttons__container">   
+            <% @lists.each do |list| %>
+                <a class="test" href="<%="/lists/#{list.id}"%>">
+                    <button class="list_button">
+                        <%= list.name %>
+                    </button> 
+                </a>
+            <% end %>
+        </div>    
     </div>
-
-<% end %>
+</div>
