@@ -1,6 +1,8 @@
 class ListsController < ApplicationController
+    before_action :verify_user
+
     def index
-        @lists = List.all
+        @lists = current_user.lists.all
     end
 
     def show
@@ -13,8 +15,13 @@ class ListsController < ApplicationController
 
     private 
 
-        def list_params
-            params.permit(:list_id)
-        end
+    def list_params
+        params.permit(:list_id)
+    end
 
+    def verify_user
+        return unless list_params[:list_id]
+        user_authorized = List.find(list_params[:list_id]).user_id == current_user.id
+        redirect_to lists_path
+    end
 end

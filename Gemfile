@@ -15,6 +15,7 @@ gem 'coffee-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
+gem 'awesome_print'
 
 
 group :development, :test do
