@@ -1,5 +1,6 @@
 $primary-blue: #4FB0C6;
 $buttons-blue: #1F5673;
+$font-stack: sans-serif;
 
 .add__new__list {
     border-radius: 5px; 
@@ -40,17 +41,27 @@ body {
 
 h1 {
     border-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-stack;
     padding: 20px;
 }
 
 h3 {
+    font-family: $font-stack;
     margin-left: 10%;
     padding-top: 40px;
 }
 
 h4 {
+    font-family: $font-stack;
     margin-left: 12%
+}
+
+p {
+    font-family: $font-stack;
+}
+
+label {
+    font-family: $font-stack;
 }
 
 html {
@@ -62,7 +73,7 @@ input {
     border-bottom: 1px solid #B0BEC5;
     border-bottom-right-radius: 2px; 
     display: block;
-    font-family: 'Mina', sans-serif;
+    font-family: $font-stack;
     font-size: 15px;
     outline: none;
     padding: 5px;
@@ -165,4 +176,15 @@ ul {
 .test {
     display: inline-block;
     width: 43%;
+}
+
+a {
+    text-decoration: none;
+    font-family: $font-stack;
+}
+
+#error_explanation {
+    font-family: $font-stack;
+    font-size: 12px;
+
 }
