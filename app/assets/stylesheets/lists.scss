@@ -22,13 +22,24 @@ $buttons-blue: #1F5673;
     float: right;
     padding: 10px 10px;
     margin: 6px;
-    width: 160px;
+    width: 350px;
 }
 
+.list__container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
-.lists_container {
+.list__content__container {
     background-color: whitesmoke;
     border-radius: 2px;
     padding-bottom: 20px;
     text-align: center;
+    margin-top: 100px;
+}
+
+.list__form__container {
+    margin: 10px;
 }

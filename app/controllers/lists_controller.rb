@@ -12,11 +12,22 @@ class ListsController < ApplicationController
     
     def new
     end
-    
+
+    def create
+        list = current_user.lists.create(name: list_params[:list_name])
+        redirect_to "/lists/#{list.id}"
+    end
+
+    def delete
+    end
+
+    def update
+    end
+
     private 
 
     def list_params
-        params.permit(:list_id)
+        params.permit(:list_id, :list_name)
     end
 
     def verify_user
