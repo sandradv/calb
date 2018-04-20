@@ -1,15 +1,11 @@
-<div class="cover__container">
-    <div class="logo__cover__container">
-        <img class="cover__logo" src="http://www.eurovoix.com/wp-content/uploads/2016/05/logo_logo.png" />
-        <div class="cover__buttons">
-            <button class="cover__log__sign__buttons"
-                onclick="window.location.href='/sessions/index'">
-                Login
-            </button>
-            <button class="cover__log__sign__buttons"
-                onclick="window.location.href='/sessions/new'">
-                Sign Up
-            </button>
+<div class="list__container">
+    <div class="list__content__container">
+        <h1>New List</h1>  
+        <div class="list__form__container">
+            <%= form_for :list do |f| %>
+                <%= text_field_tag :list_name, nil, placeholder: "List name" %><br />
+                <%= f.submit "Create list", class: "cover__log__sign__buttons" %>
+            <% end %>
         </div>
     </div>
-</div>  
+</div>

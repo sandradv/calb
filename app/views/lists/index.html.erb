@@ -1,5 +1,10 @@
-<div class="container">
-    <div class="lists_container">
+<div class="list__container">
+    <div class="list__content__container">
+        <a class="" href="<%="/lists/new"%>">
+            <button class="new_list_button">
+                New list
+            </button> 
+        </a>
         <h1>To Do!</h1>  
         <div class="buttons__container">   
             <% @lists.each do |list| %>

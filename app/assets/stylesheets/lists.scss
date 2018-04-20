@@ -13,9 +13,36 @@ $buttons-blue: #1F5673;
     width: 100%;
 }
 
-.lists_container {
+.new_list_button {  
+    background-color: $buttons-blue; 
+    border: 0px;
+    border-radius: 2px;
+    color: white;
+    position: relative;
+    float: right;
+    padding: 10px 10px;
+    margin: 6px;
+    width: 120px;
+}
+
+.list__container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.list__content__container {
     background-color: whitesmoke;
     border-radius: 2px;
     padding-bottom: 20px;
     text-align: center;
+    margin-top: 100px;
+    min-width: 350px;
+    max-width: 600px;
+    width: 60%;
+}
+
+.list__form__container {
+    margin: 10px;
 }
