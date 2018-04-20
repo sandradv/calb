@@ -12,7 +12,7 @@ class ListsController < ApplicationController
     
     def new
     end
-
+    
     private 
 
     def list_params
@@ -22,6 +22,6 @@ class ListsController < ApplicationController
     def verify_user
         return unless list_params[:list_id]
         user_authorized = List.find(list_params[:list_id]).user_id == current_user.id
-        redirect_to lists_path
+        redirect_to lists_path unless user_authorized
     end
 end

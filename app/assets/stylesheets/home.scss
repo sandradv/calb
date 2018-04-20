@@ -71,7 +71,6 @@ html {
 input {
     border: 0px;
     border-bottom: 1px solid #B0BEC5;
-    border-bottom-right-radius: 2px; 
     display: block;
     font-family: $font-stack;
     font-size: 15px;
@@ -81,8 +80,7 @@ input {
     position: relative;
     outline: none;
     transition: all 0.5s;
-    margin: 5% 5% ;  
-    height: 5px;  
+    height: 15px;  
 }
 
 input:focus {
@@ -160,6 +158,7 @@ p {
 
 .button__inactive {
     background-color: white;
+    border: 1.5px solid $buttons-blue;
     color: $buttons-blue;
 }
 
