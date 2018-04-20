@@ -22,7 +22,7 @@ $buttons-blue: #1F5673;
     float: right;
     padding: 10px 10px;
     margin: 6px;
-    width: 350px;
+    width: 120px;
 }
 
 .list__container {
@@ -38,6 +38,9 @@ $buttons-blue: #1F5673;
     padding-bottom: 20px;
     text-align: center;
     margin-top: 100px;
+    min-width: 350px;
+    max-width: 600px;
+    width: 60%;
 }
 
 .list__form__container {

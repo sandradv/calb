@@ -140,6 +140,15 @@ p {
     font-size: 20px;
     height: 40px;
 }
+
+.new__task__button{
+    @include button;
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+
+}
+
 .cover__log__sign__buttons {
     @include button;
     background-color: #1F5673; 

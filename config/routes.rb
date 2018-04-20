@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   get 'lists/new', to: 'lists#new', as: 'new_list'
   post 'lists/new', to: 'lists#create'
   get 'lists/:list_id', to: 'lists#show'
+  post 'lists/:list_id', to: 'tasks#create'
+  delete 'tasks/:task_id', to: 'tasks#delete', as: 'delete_task'
+  get 'tasks/:task_id', to: 'tasks#toggle'
   get 'sessions/new', to: 'sessions#new', as: 'signup'
   get 'sessions/index', to: 'sessions#index', as: 'login'
 end
