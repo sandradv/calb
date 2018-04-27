@@ -1,16 +1,23 @@
 <div class="list__container">
     <div class="list__content__container">
-        <h3><%= @list.name %></h3>
+    <div class="contianer__back_button">
+            <a class="" href="<%="/lists"%>">
+                <button class="new_list_button">
+                    < Back to lists
+                </button> 
+            </a>
+        </div>
+        <h3 class="lists__text lists_title"><%= @list.name %></h3>
         <% @list.tasks.all.each do |task| %>
-            <h4>
+            <h4 class="lists__text">
             <%= link_to (task.complete == true ? "✔️" : "🔲"), "/tasks/#{task.id}", method: :get %>
             <%= task.name  %>
             <%= link_to "delete", "/tasks/#{task.id}", method: :delete %></h4>
         <% end %>
-        <div class="list__form__container">
+        <div class="new__tasks__container">
             <%= form_for :task do |f| %>
-                <%= text_field_tag :task_name, nil, placeholder: "new task" %><br />
-                <%= f.submit "Create list", class: "new__task__button" %>
+                <%= text_field_tag :task_name, nil, placeholder: "new task"%><br />
+                <%= f.submit "Add task", class: "new__task__button" %>
             <% end %>
         </div>
     </div>
