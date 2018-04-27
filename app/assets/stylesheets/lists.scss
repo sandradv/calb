@@ -9,7 +9,10 @@ $buttons-blue: #1F5673;
     border: 0px;
     border-radius: 2px;
     color: white;
-    padding: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    padding: 9px;
+    max-height: 50px;
     width: 100%;
 }
 
@@ -18,6 +21,8 @@ $buttons-blue: #1F5673;
     border: 0px;
     border-radius: 2px;
     color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
     position: relative;
     float: right;
     padding: 10px 10px;
@@ -39,10 +44,14 @@ $buttons-blue: #1F5673;
     text-align: center;
     margin-top: 100px;
     min-width: 350px;
-    max-width: 600px;
-    width: 60%;
+    max-width: 800px;
+    width: 80%;
 }
 
 .list__form__container {
     margin: 10px;
+}
+
+.test {
+    padding: 3px;
 }

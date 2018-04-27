@@ -1,11 +1,17 @@
 <div class="list__container">
     <div class="list__content__container">
-        <a class="" href="<%="/lists/new"%>">
-            <button class="new_list_button">
-                New list
-            </button> 
-        </a>
-        <h1>To Do!</h1>  
+        <div class="contianer_new__list_button">
+            <a class="" href="<%="/lists/new"%>">
+                <button class="new_list_button">
+                    + New list
+                </button> 
+            </a>
+        </div>
+        <div class="container__to__do">
+            <p class="to_do">
+            To Do!
+            </p>  
+        </div>
         <div class="buttons__container">   
             <% @lists.each do |list| %>
                 <a class="test" href="<%="/lists/#{list.id}"%>">
